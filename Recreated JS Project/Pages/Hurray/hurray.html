@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="Hurray.css" />
+  </head>
+  <body>
+    <div class="parent">
+
+      <div id="trophy-parent">
+        <img src="../../Images/Hurray/Group 5.png" />
+        <img id="vector" src="../../Images/Hurray/Vector.png" />
+      </div>
+
+      <div id="hurray-parent">
+        <img src="../../Images/Hurray/HURRAY!!.png" />  
+        <img src="../../Images/Hurray/YOU WON THE GAME.png" />      
+      </div>
+
+      <div id="hurray-play-again">
+        <button id="play-again">PLAY AGAIN</button>
+      </div>
+
+      <div id="rules-parent" style="display: none;">
+        <span id="rules-board">
+          <div id="writting-area">
+            <h1>Game Rules</h1>
+            <ul class="custom-square-list">
+              <li>Rock beats scissors, scissors beats paper, paper beats rock.</li>
+              <li>Agree ahead of time whether you'll count of "rock, paper, scissors, shoot" or just "rock, paper, scissors."</li>
+              <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+              <li>If both players lay down the same hand, each player lays down another hand.</li>
+            </ul>            
+          </div>
+        </span>
+        <button id="close-rules">X</button>
+      </div>
+
+      <span id="rules-text-box">
+        <img id="rules-text-rec" src="../../Images/PNG/Rectangle 2.png" />
+        <button id="rules-text">RULES</button>
+      </span>
+    </div>
+
+    <script>
+      const rulesParent = document.getElementById("rules-parent");
+      const rulesButton = document.getElementById("rules-text");
+      const closeButton = document.getElementById("close-rules");
+
+      rulesButton.addEventListener("click", () => {
+        rulesParent.style.display = "flex";
+      });
+
+      closeButton.addEventListener("click", () => {
+        rulesParent.style.display = "none";
+      });
+
+      const playAgainBtn = document.getElementById("play-again");
+      playAgainBtn.addEventListener("click", () => {
+        window.location.href = "../Page2/Page2.html";
+      });
+    </script>
+  </body>
+</html>

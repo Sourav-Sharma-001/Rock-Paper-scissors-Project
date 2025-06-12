@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="page2.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div id="score-container-base">
+        <div>
+          <img id="rec1" src="../../Images/PNG/Rectangle 1.png" alt="rec1" />
+        </div>
+      </div>
+
+      <div id="score-container">
+        <div id="divide-RPS-score-sec">
+          <div id="RPS-labels">
+            <div><img src="../../Images/PNG/ROCK.png" alt="rock label" /></div>
+            <div>
+              <img src="../../Images/PNG/PAPER.png" alt="paper label" />
+            </div>
+            <div>
+              <img src="../../Images/PNG/SCISSORS.png" alt="scissors label" />
+            </div>
+          </div>
+
+          <div id="score-sec">
+            <div id="score-box">
+              <img
+                id="rec3"
+                src="../../Images/PNG/Rectangle 3.png"
+                alt="Computer Score"
+              />
+              <div id="score-block">
+                <span class="score-label">COMPUTER</span>
+                <span class="score-label">SCORE</span>
+                <span class="score-text" id="computer-score">0</span>
+              </div>
+            </div>
+
+            <div id="score-box">
+              <img
+                id="rec3"
+                src="../../Images/PNG/Rectangle 3.png"
+                alt="Your Score"
+              />
+              <div id="score-block">
+                <span class="score-label">YOUR</span>
+                <span class="score-label">SCORE</span>
+                <span class="score-text" id="player-score">0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="conclusion-sec">
+        <div id="left-sec">
+          <span>
+            <img id="player-move" />
+          </span>
+        </div>
+        <div id="middle-sec">
+          <span>
+            <img id="you-win-text" src="../../Images/page2/YOU WIN.png" />
+          </span>
+          <span>
+            <img src="../../Images/page2/AGAINST PC.png" />
+          </span>
+          <span>
+            <button id="play-again">PLAY AGAIN</button>
+          </span>
+        </div>
+        <div>
+          <img id="computer-move" />
+        </div>
+      </div>
+
+      <div id="ellipse-container">
+        <span>
+          <img id="ellipse-4" src="../../Images/page2/Ellipse 4.png" />
+        </span>
+        <span>
+          <img id="ellipse-3" src="../../Images/page2/Ellipse 3.png" />
+        </span>
+        <span>
+          <img id="ellipse-5" src="../../Images/page2/Ellipse 5.png" />
+        </span>
+      </div>
+
+      <div id="picked-text">
+        <div>YOU PICKED</div>
+        <div>PC PICKED</div>
+      </div>
+
+      <div id="rules-parent" style="display: none">
+        <span id="rules-board">
+          <div id="writting-area">
+            <h1>Game Rules</h1>
+            <ul class="custom-square-list">
+              <li>
+                Rock beats scissors, scissors beats paper, paper beats rock.
+              </li>
+              <li>
+                Agree ahead of time whether you'll count of "rock, paper,
+                scissors, shoot" or just "rock, paper, scissors."
+              </li>
+              <li>
+                Use rock, paper, scissors to settle minor decisions or simply
+                play to pass the time.
+              </li>
+              <li>
+                If both players lay down the same hand, each player lays down
+                another hand.
+              </li>
+            </ul>
+          </div>
+        </span>
+        <button id="close-rules">X</button>
+      </div>
+
+      <span id="rules-text-box">
+        <img id="rules-text-rec" src="../../Images/PNG/Rectangle 2.png" />
+        <button id="rules-text">RULES</button>
+      </span>
+
+      <span id="rules-text-box-2">
+        <img id="rules-text-rec-2" src="../../Images/PNG/Rectangle 2.png" />
+        <span id="rules-text-2">NEXT</span>
+      </span>
+    </div>
+
+    <script type="module" src="win.js"></script>
+  </body>
+</html>
