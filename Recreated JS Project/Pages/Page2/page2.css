@@ -5,7 +5,7 @@ body {
 }
 
 .parent {
-  height: 100vh;
+  height: 100%;
   opacity: 0;
   animation: fadeIn 0.8s ease-in-out forwards;
 }

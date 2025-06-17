@@ -5,31 +5,31 @@ body {
 }
 
 .parent {
-  height: 100vh;
+  height: 100%;
 }
 
 #score-container-base {
   position: relative;
-  margin-top: 4%;
-  margin-left: 12%;
-  width: 60%;
-  height: 14.6%;
+  margin-top: 100px;
+  margin-left: 300px;
+  width: 1500px;
+  height: 190px;
   display: flex;
   align-items: center;
 }
 
 #score-container {
   position: absolute;
-  top: 7.68%;
-  left: 12%;
-  width: 59%;
-  height: 14.6%;
+  top: 100px;
+  left: 300px;
+  width: 1500px;
+  height: 190px;
   display: flex;
   align-items: center;
 }
 
 #rec1 {
-  width: 200%;
+  width: 1500px;
   height: 150px;
 }
 
@@ -38,15 +38,15 @@ body {
   justify-content: space-between;
   margin: 0px 20px;
   align-items: center;
-  height: 12%;
-  width: 200%;
+  height: 150px;
+  width: 1500px;
 }
 
 #RPS-labels {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 12%;
+  height: 150px;
   justify-content: center;
 }
 
@@ -55,14 +55,14 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 25%;
-  height: 12%;
+  height: 150px;
   margin: 5px 0;
 }
 
 #score-box {
   position: relative;
-  width: 100%;
-  height: 5000%;
+  width: 150px;
+  height: 130px;
   overflow: hidden;
   display: flex;
   margin: 0px 10px;
