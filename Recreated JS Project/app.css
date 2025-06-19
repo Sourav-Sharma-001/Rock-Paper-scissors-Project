@@ -2,13 +2,40 @@ body {
   background-color: #8cc461;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
 }
 
 .parent {
   height: 100%;
 }
 
+#score-container {
+  display: flex;
+  border: 2px solid white;
+  width: 55%;
+  margin-top: 3%;
+  margin-left: 15%;
+  height: 20%;
+  border-radius: 15px;
+  place-items: center;
+  padding: 0 1%;
+}
 
+#RPS-text {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+  height: 80%;
+  font-size: 200%;
+  font-weight: bold;
+  color: white;
+}
 
 #game-container {
   position: relative;
