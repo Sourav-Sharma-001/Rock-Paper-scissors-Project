@@ -8,99 +8,7 @@ body {
   height: 100%;
 }
 
-#score-container-base {
-  position: relative;
-  margin-top: 100px;
-  margin-left: 300px;
-  width: 1500px;
-  height: 190px;
-  display: flex;
-  align-items: center;
-}
 
-#score-container {
-  position: absolute;
-  top: 100px;
-  left: 300px;
-  width: 1500px;
-  height: 190px;
-  display: flex;
-  align-items: center;
-}
-
-#rec1 {
-  width: 1500px;
-  height: 150px;
-}
-
-#divide-RPS-score-sec {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 20px;
-  align-items: center;
-  height: 150px;
-  width: 1500px;
-}
-
-#RPS-labels {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  height: 150px;
-  justify-content: center;
-}
-
-#score-sec {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 25%;
-  height: 150px;
-  margin: 5px 0;
-}
-
-#score-box {
-  position: relative;
-  width: 150px;
-  height: 130px;
-  overflow: hidden;
-  display: flex;
-  margin: 0px 10px;
-}
-
-#rec3 {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-}
-
-#score-block {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  padding: 0 5px;
-  box-sizing: border-box;
-}
-
-.score-label {
-  font-size: 20px;
-  line-height: 1.2;
-  white-space: nowrap;
-}
-
-.score-text {
-  font-weight: bold;
-  font-size: 55px;
-  margin-top: 5px;
-  line-height: 1;
-}
 
 #game-container {
   position: relative;
@@ -314,4 +222,3 @@ body {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
-
