@@ -23,6 +23,7 @@ html, body {
   border-radius: 15px;
   place-items: center;
   padding: 0 1%;
+  justify-content: space-around;
 }
 
 #RPS-text {
@@ -35,6 +36,14 @@ html, body {
   font-size: 200%;
   font-weight: bold;
   color: white;
+}
+
+#score-section {
+  background-color: yellow;
+  display: flex;
+  width: 40%;
+  height: 80%;
+  gap: 30%;
 }
 
 #game-container {
