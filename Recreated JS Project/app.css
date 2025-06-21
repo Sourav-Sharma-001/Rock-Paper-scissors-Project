@@ -27,7 +27,6 @@ html, body {
 }
 
 #RPS-text {
-  background-color: aqua;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,11 +38,17 @@ html, body {
 }
 
 #score-section {
-  background-color: yellow;
   display: flex;
-  width: 40%;
+  width: 35%;
   height: 80%;
-  gap: 30%;
+  justify-content: space-between;
+}
+
+#CS-text {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  left: 50%;
 }
 
 #game-container {
