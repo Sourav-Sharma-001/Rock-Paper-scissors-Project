@@ -9,8 +9,8 @@ closeButton.addEventListener("click", () => {
   rulesParent.style.display = "none";
 });
 
-const computerScoreEl = document.getElementById("computer-score");
-const playerScoreEl = document.getElementById("player-score");
+const computerScoreEl = document.getElementById("CS-score-text");
+const playerScoreEl = document.getElementById("YS-score-text");
 
 let playerScore = Number(localStorage.getItem("playerScore")) || 0;
 let computerScore = Number(localStorage.getItem("computerScore")) || 0;
@@ -54,9 +54,6 @@ export function playGame(playerMove) {
   playerScoreEl.textContent = playerScore;
   computerScoreEl.textContent = computerScore;
 
-  console.log(`Player: ${playerMove}, Computer: ${computerMove}`);
-  console.log(result);
-
   if (result === "You win") {
     window.location.href = "Pages/Hurray/hurray.html";
   } else if (result === "You lost") {
@@ -75,6 +72,8 @@ paperBtn.addEventListener("click", () => playGame("Paper"));
 scissorsBtn.addEventListener("click", () => playGame("Scissors"));
 
 const playAgainBtn = document.getElementById("play-again");
-playAgainBtn.addEventListener("click", () => {
-  window.location.href = "../../app.html";
-});
+if (playAgainBtn) {
+  playAgainBtn.addEventListener("click", () => {
+    window.location.href = "../../app.html";
+  });
+}
