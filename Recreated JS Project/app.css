@@ -38,18 +38,70 @@ html, body {
 }
 
 #score-section {
+  position: relative;
   display: flex;
   width: 35%;
   height: 80%;
   justify-content: space-between;
 }
 
-#CS-text {
-  position: absolute;
-  width: 100%;
-  top: 10%;
-  left: 50%;
+#score-section img {
+  height: 100%;
 }
+
+#computer-score {
+  position: absolute;
+  top: 4%;
+  left: 8%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-weight: bold;  
+}
+
+#computer-label {
+  color: rgb(101, 101, 101);
+  margin-bottom: 5%;
+}
+
+#CS-score-text {
+  font-size: 400%;
+}
+
+#CS-score-label {
+  color: rgb(101, 101, 101);
+  margin-bottom: 5%;
+}
+
+#score-section {
+  display: flex;
+  width: 35%;
+  height: 80%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#your-score {
+  position: absolute;
+  top: 4%;
+  right: 13%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-weight: bold;  
+}
+
+#your-label,
+#YS-score-label {
+  color: rgb(101, 101, 101);
+  margin-bottom: 5%;
+}
+
+#YS-score-text {
+  font-size: 400%;
+}
+
 
 #game-container {
   position: relative;
