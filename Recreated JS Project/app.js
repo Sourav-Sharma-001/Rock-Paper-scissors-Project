@@ -55,7 +55,7 @@ export function playGame(playerMove) {
   computerScoreEl.textContent = computerScore;
 
   if (result === "You win") {
-    window.location.href = "Pages/Hurray/hurray.html";
+    window.location.href = "Pages/Page2/page2.html";
   } else if (result === "You lost") {
     window.location.href = "Pages/Page3/page3.html";
   } else {

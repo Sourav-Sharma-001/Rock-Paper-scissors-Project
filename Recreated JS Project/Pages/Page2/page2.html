@@ -1,87 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="page2.css" />
-  </head>
-  <body>
-    <div class="parent">     
 
-      <div id="score-container">
-        <div id="RPS-text">
-          <div>ROCK</div>
-          <div>PAPER</div>
-          <div>SCISSORS</div>
-        </div>
-        <div id="score-section">
-          <div>
-            <img src="../../Images/PNG/Rectangle 3.png" />
-            <div id="computer-score">
-              <div id="computer-label">COMPUTER</div>
-              <div id="CS-score-label">SCORE</div>
-              <div id="CS-score-text" id="computer-score">0</div>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="page2.css" />
+</head>
+
+<body>
+  <div class="parent">
+
+    <div id="score-container">
+      <div id="RPS-text">
+        <div>ROCK</div>
+        <div>PAPER</div>
+        <div>SCISSORS</div>
+      </div>
+      <div id="score-section">
+        <div>
+          <img src="../../Images/PNG/Rectangle 3.png" />
+          <div id="computer-score">
+            <div id="computer-label">COMPUTER</div>
+            <div id="CS-score-label">SCORE</div>
+            <div id="CS-score-text" id="computer-score">0</div>
           </div>
-          <div>
-            <img src="../../Images/PNG/Rectangle 3.png" />
-            <div id="your-score">
-              <div id="your-label">YOUR</div>
-              <div id="YS-score-label">SCORE</div>
-              <div id="YS-score-text" id="computer-score">0</div>
-            </div>
+        </div>
+        <div>
+          <img src="../../Images/PNG/Rectangle 3.png" />
+          <div id="your-score">
+            <div id="your-label">YOUR</div>
+            <div id="YS-score-label">SCORE</div>
+            <div id="YS-score-text" id="computer-score">0</div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div id="conclusion-sec">
-        a
+    <div id="conclusion-sec">
+      <div id="eli-container">
+        <img id="eli-3" src="../../Images/PNG/Ellipse 3.png" />
+        <img id="eli-5" src="../../Images/PNG/Ellipse 5.png" />
+        <img id="eli-4" src="../../Images/PNG/Ellipse 4.png" />
+        <img id="player-choice" src="" />
       </div>
-      
-
-      <!-- <div id="picked-text">
+      <div id="you-win-text-sec">
+        <div id="you-win-text">YOU WIN</div>
+        <div id="against-pc-text">AGAINST PC</div>
+        <button id="play-again">PLAY AGAIN</button>
+      </div>
+      <div id="computer-choice-sec">
+        <img id="computer-choice" src="" />
+      </div>
+      <div id="picked-text">
         <div>YOU PICKED</div>
         <div>PC PICKED</div>
-      </div> -->
-
-      <!-- <div id="rules-parent" style="display: none">
-        <span id="rules-board">
-          <div id="writting-area">
-            <h1>Game Rules</h1>
-            <ul class="custom-square-list">
-              <li>
-                Rock beats scissors, scissors beats paper, paper beats rock.
-              </li>
-              <li>
-                Agree ahead of time whether you'll count of "rock, paper,
-                scissors, shoot" or just "rock, paper, scissors."
-              </li>
-              <li>
-                Use rock, paper, scissors to settle minor decisions or simply
-                play to pass the time.
-              </li>
-              <li>
-                If both players lay down the same hand, each player lays down
-                another hand.
-              </li>
-            </ul>
-          </div>
-        </span>
-        <button id="close-rules">X</button>
       </div>
+    </div>
 
-      <span id="rules-text-box">
-        <img id="rules-text-rec" src="../../Images/PNG/Rectangle 2.png" />
-        <button id="rules-text">RULES</button>
+    <div id="rules-parent" style="display: none">
+      <span id="rules-board">
+        <div id="writting-area">
+          <h1>Game Rules</h1>
+          <ul class="custom-square-list">
+            <li>Rock beats scissors, scissors beats paper, paper beats rock.</li>
+            <li>Agree ahead of time whether you'll count of "rock, paper, scissors, shoot" or just "rock, paper, scissors."</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+            <li>If both players lay down the same hand, each player lays down another hand.</li>
+          </ul>
+        </div>
       </span>
+      <button id="close-rules">X</button>
+    </div>
 
-      <span id="rules-text-box-2">
-        <img id="rules-text-rec-2" src="../../Images/PNG/Rectangle 2.png" />
-        <button id="rules-text-2">NEXT</button>
-      </span>
-    </div> -->
+    <span id="rules-text-box">
+      <img id="rules-text-rec" src="../../Images/PNG/Rectangle 2.png" />
+      <button id="rules-text">RULES</button>
+    </span>
+  </div>
 
-    <script type="module" src="win.js"></script>
-  </body>
+  <span id="next-text-box">
+    <img id="next-text-rec" src="../../Images/PNG/Rectangle 2.png" />
+    <button id="next-text">NEXT</button>
+  </span>
+  
+
+  <script type="module" src="win.js"></script>
+</body>
+
 </html>
