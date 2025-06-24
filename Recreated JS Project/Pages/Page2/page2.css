@@ -2,6 +2,11 @@ body {
   background-color: #8cc461;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
 }
 
 .parent {
@@ -10,165 +15,85 @@ body {
   animation: fadeIn 0.8s ease-in-out forwards;
 }
 
-#score-container-base {
-  position: relative;
-  margin-top: 100px;
-  margin-left: 300px;
-  width: 1500px;
-  height: 190px;
-  display: flex;
-  align-items: center;
-}
 
 #score-container {
-  position: absolute;
-  top: 0%;
-  margin-top: 100px;
-  margin-left: 300px;
-  width: 1500px;
-  height: 190px;
   display: flex;
-  align-items: center;
+  border: 2px solid white;
+  width: 55%;
+  margin-top: 3%;
+  margin-left: 15%;
+  height: 20%;
+  border-radius: 15px;
+  place-items: center;
+  padding: 0 1%;
+  justify-content: space-around;
 }
 
-#rec1 {
-  width: 1500px;
-  height: 150px;
-}
-
-#divide-RPS-score-sec {
-  display: flex;
-  justify-content: space-between;
-  margin: 0px 20px;
-  align-items: center;
-  height: 150px;
-  width: 1500px;
-}
-
-#RPS-labels {
+#RPS-text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  height: 150px;
-  justify-content: center;
-}
-
-#score-sec {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 25%;
-  height: 150px;
-  margin: 5px 0;
-}
-
-#score-box {
-  position: relative;
-  width: 150px;
-  height: 130px;
-  overflow: hidden;
-  display: flex;
-  margin: 0px 10px;
-}
-
-#rec3 {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-}
-
-#score-block {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  padding: 0 5px;
-  box-sizing: border-box;
-}
-
-.score-label {
-  font-size: 20px;
-  line-height: 1.2;
-  white-space: nowrap;
-}
-
-.score-text {
+  width: 55%;
+  height: 80%;
+  font-size: 200%;
   font-weight: bold;
-  font-size: 55px;
-  margin-top: 5px;
-  line-height: 1;
+  color: white;
+}
+
+#score-section {
+  position: relative;
+  display: flex;
+  width: 35%;
+  height: 80%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#score-section img {
+  height: 100%;
+}
+
+#computer-score,
+#your-score {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-weight: bold;
+  top: 4%;
+}
+
+#computer-score {
+  left: 8%;
+}
+
+#your-score {
+  right: 13%;
+}
+
+#computer-label,
+#CS-score-label,
+#your-label,
+#YS-score-label {
+  color: rgb(101, 101, 101);
+  margin-bottom: 5%;
+}
+
+#CS-score-text,
+#YS-score-text {
+  font-size: 400%;
 }
 
 #conclusion-sec {
-  height: 500px;
-  margin-left: 300px;
-  margin-top: 100px;
-  display: flex;
-  justify-content: space-around;
-  width: 1500px;
-  align-items: center;
+  background-color: aqua;
+  width: 55%;
+  margin-left: 15%;
+  margin-top: 5%;
+  height: 50%;
 }
 
-#ellipse-container {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  left: 300px;
-  top: -500px;
-}
-
-#ellipse-4 {
-  position: absolute;
-  top: 10px;
-  left: 11px;
-}
-
-#ellipse-5 {
-  position: absolute;
-  z-index: 3;
-  top: 120px;
-  left: 127px;
-}
-
-#ellipse-3 {
-  position: absolute;
-  z-index: 2;
-  top: 95px;
-  left: 101px;
-}
-
-#ellipse-4 {
-  z-index: 1;
-}
-
-#player-move {
-  z-index: 4;
-  position: relative;
-}
-
-#middle-sec {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  height: 150px;
-}
-
-#play-again {
-  padding: 12px 45px;
-  background-color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-#picked-text {  
+#picked-text {
   position: absolute;
   top: 500px;
   width: 1110px;
@@ -211,16 +136,16 @@ body {
   align-items: center;
 }
 
+#writting-area {
+  width: 90%;
+  height: 100%;
+}
+
 #writting-area h1 {
   place-self: center;
   color: white;
   font-size: 50px;
   font-weight: bolder;
-}
-
-#writting-area {
-  width: 90%;
-  height: 100%;
 }
 
 .custom-square-list {
@@ -238,90 +163,6 @@ body {
   align-items: center;
 }
 
-.custom-square-list li::before {
-  content: "";
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background-color: #ffd600;
-  margin-right: 12px;
-  flex-shrink: 0;
-}
-
-#rules-parent button {
-  position: absolute;
-  top: -50px;
-  right: -45px;
-  width: 90px;
-  height: 90px;
-  background-color: red;
-  color: white;
-  font-weight: bold;
-  font-size: 52px;
-  border: 7px solid white;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s ease;
-}
-
-#rules-parent button:hover {
-  background-color: #cc0000;
-}
-
-#rules-text-box {
-  position: absolute;
-  left: 84%;
-  top: 80%;
-  width: 150px;
-}
-
-#rules-text-rec {
-  width: 100%;
-  height: 100%;
-}
-
-#rules-text {
-  position: absolute;
-  margin-left: -5%;
-  margin-top: 3px;
-  font-size: 40px;
-  color: white;
-  left: 7%;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-#rules-text:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-#rules-text-box-2 {
-  position: absolute;
-  left: calc(84% + 170px);
-  top: 80%;
-  width: 150px;
-}
-
-#rules-text-rec-2 {
-  width: 100%;
-  height: 100%;
-}
-
-#rules-text-2 {
-  position: absolute;
-  font-size: 40px;
-  color: white;
-  left: 7%;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -329,35 +170,4 @@ body {
   to {
     opacity: 1;
   }
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.8;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-#ellipse-container img {
-  animation: pulse 2s ease-in-out infinite;
-}
-
-#ellipse-3 {
-  animation-delay: 0s;
-}
-
-#ellipse-5 {
-  animation-delay: 0.5s;
-}
-
-img[src*="Ellipse 4.png"] {
-  animation-delay: 1s;
 }

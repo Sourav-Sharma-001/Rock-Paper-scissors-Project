@@ -34,5 +34,6 @@ if (computerMove) {
 const playerScore = localStorage.getItem("playerScore");
 const computerScore = localStorage.getItem("computerScore");
 
-document.getElementById("player-score").textContent = playerScore || 0;
-document.getElementById("computer-score").textContent = computerScore || 0;
+document.getElementById("YS-score-text").textContent = playerScore || 0;
+document.getElementById("CS-score-text").textContent = computerScore || 0;
+
