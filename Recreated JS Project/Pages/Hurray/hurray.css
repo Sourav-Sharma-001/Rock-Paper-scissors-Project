@@ -2,23 +2,26 @@ body {
   background-color: #8cc461;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
 }
 
 .parent {
   height: 100%;
-  animation: fadeIn 2s ease forwards;
-  animation-delay: 1s;
   opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
 }
 
 #trophy-parent {
   position: relative;
-  width: 1500px;
-  place-self: center;
-  margin-top: 10%;
+  width: 80%;
+  margin: 8% auto 0 auto;
   display: flex;
   justify-content: center;
-  height: 400px;
+  height: 40vh;
 }
 
 #vector {
@@ -31,38 +34,41 @@ body {
 }
 
 #hurray-parent {
-  place-self: center;
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 1.5em;
+  margin-top: 2%;
 }
 
 #hurray-play-again {
-  place-self: center;
-  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
 }
 
 #play-again {
-  padding: 12px 45px;
+  padding: 1em 3em;
   background-color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5em;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
 }
 
 #rules-parent {
   background-color: white;
   position: fixed;
-  top: 55%;
-  left: 79%;
-  transform: translate(-50%, -50%);
-  width: 500px;
-  height: 600px;
+  top: 30%;
+  left: 60%;
+  width: 25%;
+  height: 55%;
   display: none;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
+  border-radius: 1%;
   z-index: 1000;
 }
 
@@ -80,29 +86,29 @@ body {
   align-items: center;
 }
 
-#writting-area h1 {
-  place-self: center;
-  color: white;
-  font-size: 50px;
-  font-weight: bolder;
-}
-
 #writting-area {
   width: 90%;
   height: 100%;
 }
 
+#writting-area h1 {
+  place-self: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
 .custom-square-list {
   list-style: none;
   padding-left: 0;
-  margin-top: 20px;
+  margin-top: 0.5%;
 }
 
 .custom-square-list li {
   color: white;
-  font-size: 24px;
-  line-height: 1.6;
-  margin: 20px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 5% 0;
   display: flex;
   align-items: center;
 }
@@ -110,24 +116,24 @@ body {
 .custom-square-list li::before {
   content: "";
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 1rem;
+  height: 1rem;
   background-color: #ffd600;
-  margin-right: 12px;
+  margin-right: 0.75rem;
   flex-shrink: 0;
 }
 
 #rules-parent button {
   position: absolute;
-  top: -50px;
-  right: -45px;
-  width: 90px;
-  height: 90px;
+  top: -8%;
+  right: -7%;
+  width: 15%;
+  height: 15%;
   background-color: red;
   color: white;
   font-weight: bold;
-  font-size: 52px;
-  border: 7px solid white;
+  font-size: 2.5rem;
+  border: 0.5rem solid white;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -142,9 +148,9 @@ body {
 
 #rules-text-box {
   position: absolute;
-  left: 84%;
-  top: 80%;
-  width: 150px;
+  left: 78%;
+  top: 87%;
+  width: 10%;
 }
 
 #rules-text-rec {
@@ -155,8 +161,8 @@ body {
 #rules-text {
   position: absolute;
   margin-left: -5%;
-  margin-top: 3px;
-  font-size: 40px;
+  margin-top: 0.25rem;
+  font-size: 2.5rem;
   color: white;
   left: 7%;
   background: transparent;
@@ -173,6 +179,9 @@ body {
 }
 
 @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
   to {
     opacity: 1;
   }

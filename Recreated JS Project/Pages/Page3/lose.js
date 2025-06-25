@@ -1,4 +1,3 @@
-
 const rulesButton = document.getElementById("rules-text");
 const rulesParent = document.getElementById("rules-parent");
 const closeButton = document.getElementById("close-rules");
@@ -11,7 +10,7 @@ closeButton.addEventListener("click", () => {
   rulesParent.style.display = "none";
 });
 
-const playAgainBtn = document.getElementById("play-again");
+const playAgainBtn = document.getElementById("play-again-page3");
 playAgainBtn.addEventListener("click", () => {
   window.location.href = "../../app.html";
 });
@@ -20,13 +19,13 @@ const playerMove = localStorage.getItem("playerMove");
 const computerMove = localStorage.getItem("computerMove");
 
 if (playerMove) {
-  document.getElementById("player-move").src = `../../Images/page2/${playerMove}.png`;
+  document.getElementById("player-choice-page3").src = `../../Images/page2/${playerMove}.png`;
 } else {
   console.warn("No playerMove found in localStorage.");
 }
 
 if (computerMove) {
-  document.getElementById("computer-move").src = `../../Images/page2/${computerMove}.png`;
+  document.getElementById("computer-choice-page3").src = `../../Images/page2/${computerMove}.png`;
 } else {
   console.warn("No computerMove found in localStorage.");
 }
@@ -34,5 +33,5 @@ if (computerMove) {
 const playerScore = localStorage.getItem("playerScore");
 const computerScore = localStorage.getItem("computerScore");
 
-document.getElementById("player-score").textContent = playerScore || 0;
-document.getElementById("computer-score").textContent = computerScore || 0;
+document.getElementById("YS-score-text").textContent = playerScore || 0;
+document.getElementById("CS-score-text").textContent = computerScore || 0;
