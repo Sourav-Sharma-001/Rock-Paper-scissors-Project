@@ -34,9 +34,12 @@ html, body {
   justify-content: space-between;
   width: 55%;
   height: 80%;
-  font-size: 200%;
   font-weight: bold;
   color: white;
+}
+
+#RPS-text div {
+  font-size: xx-large;
 }
 
 #score-section {
@@ -45,43 +48,78 @@ html, body {
   width: 35%;
   height: 80%;
   justify-content: space-between;
-  align-items: center;
-  gap: 20px;
 }
 
-#score-section img {
+#computer-score-sec {
+  height: 100%;
+  width: 45%;
+}
+
+#computer-score-sec img {
+  width: 100%;
   height: 100%;
 }
 
-#computer-score,
-#your-score {
+#computer-score {
   position: absolute;
+  top: 0;
+  width: 45%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   place-items: center;
   font-weight: bold;
-  top: 4%;
+  justify-content: center;
 }
 
-#computer-score {
-  left: 8%;
+#computer-label {
+  color: rgb(101, 101, 101);
+  margin-top: 5%;
 }
 
-#your-score {
-  right: 13%;
-}
-
-#computer-label,
-#CS-score-label,
-#your-label,
-#YS-score-label {
+#CS-label {
   color: rgb(101, 101, 101);
   margin-bottom: 5%;
 }
 
-#CS-score-text,
-#YS-score-text {
-  font-size: 400%;
+#CS-text {
+  font-size: 4em;
+}
+
+#your-score-sec {
+  height: 100%;
+  width: 45%;
+}
+
+#your-score-sec img {
+  width: 100%;
+  height: 100%;
+}
+
+#your-score {
+  position: absolute;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-weight: bold;
+  justify-content: center;
+}
+
+#your-label {
+  color: rgb(101, 101, 101);
+  margin-top: 5%;
+}
+
+#YS-label {
+  color: rgb(101, 101, 101);
+  margin-bottom: 5%;
+}
+
+#YS-text {
+  font-size: 4em;
 }
 
 #conclusion-sec-page4 {
@@ -122,12 +160,6 @@ html, body {
   font-weight: bold;
 }
 
-#against-pc-text-page4 {
-  font-size: large;
-  color: white;
-  font-weight: bold;
-}
-
 #you-win-text-sec-page4 button {
   margin-top: 1.5em;
   color: grey;
@@ -140,7 +172,6 @@ html, body {
   cursor: pointer;
   place-self: center;
 }
-
 
 #picked-text-page4 {
   position: absolute;
@@ -191,7 +222,7 @@ html, body {
 #writting-area h1 {
   place-self: center;
   color: white;
-  font-size: 200%;
+  font-size: 2em;
   font-weight: bolder;
 }
 
@@ -203,8 +234,8 @@ html, body {
 
 .custom-square-list li {
   color: white;
-  font-size: 100%;
-  line-height: 150%;
+  font-size: 1em;
+  line-height: 1.5em;
   margin: 5% 0;
   display: flex;
   align-items: center;
@@ -215,7 +246,7 @@ html, body {
   content: "";
   display: inline-block;
   width: 5%;
-  height: 15px;
+  height: 1em;
   background-color: #ffd600;
   margin-right: 4%;
   flex-shrink: 0;
@@ -230,7 +261,7 @@ html, body {
   background-color: red;
   color: white;
   font-weight: bold;
-  font-size: 200%;
+  font-size: 2em;
   border: 7px solid white;
   border-radius: 50%;
   cursor: pointer;
@@ -260,7 +291,7 @@ html, body {
   position: absolute;
   margin-left: -5%;
   margin-top: 3px;
-  font-size: 250%;
+  font-size: 2.5em;
   color: white;
   left: 7%;
   background: transparent;
@@ -281,6 +312,21 @@ html, body {
     opacity: 0;
   }
   to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
 }
