@@ -33,8 +33,8 @@ if (computerImage && computerMove) {
 const playerScore = localStorage.getItem("playerScore");
 const computerScore = localStorage.getItem("computerScore");
 
-const playerScoreEl = document.getElementById("YS-score-text");
-const computerScoreEl = document.getElementById("CS-score-text");
+const playerScoreEl = document.getElementById("YS-text");
+const computerScoreEl = document.getElementById("CS-text");
 
 if (playerScoreEl) playerScoreEl.textContent = playerScore || 0;
 if (computerScoreEl) computerScoreEl.textContent = computerScore || 0;
