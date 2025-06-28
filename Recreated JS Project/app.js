@@ -9,8 +9,8 @@ closeButton.addEventListener("click", () => {
   rulesParent.style.display = "none";
 });
 
-const computerScoreEl = document.getElementById("CS-score-text");
-const playerScoreEl = document.getElementById("YS-score-text");
+const computerScoreEl = document.getElementById("CS-text");
+const playerScoreEl = document.getElementById("YS-text");
 
 let playerScore = Number(localStorage.getItem("playerScore")) || 0;
 let computerScore = Number(localStorage.getItem("computerScore")) || 0;
@@ -18,7 +18,7 @@ let computerScore = Number(localStorage.getItem("computerScore")) || 0;
 playerScoreEl.textContent = playerScore;
 computerScoreEl.textContent = computerScore;
 
-export function playGame(playerMove) {
+function playGame(playerMove) {
   let computerRandom = Math.random();
   let computerMove = "";
 
@@ -55,11 +55,11 @@ export function playGame(playerMove) {
   computerScoreEl.textContent = computerScore;
 
   if (result === "You win") {
-    window.location.href = "Pages/Page2/page2.html";
+    window.location.href = "pages/Page2/page2.html";
   } else if (result === "You lost") {
-    window.location.href = "Pages/Page3/page3.html";
+    window.location.href = "pages/Page3/page3.html";
   } else {
-    window.location.href = "Pages/Page4/page4.html";
+    window.location.href = "pages/Page4/page4.html";
   }
 }
 
