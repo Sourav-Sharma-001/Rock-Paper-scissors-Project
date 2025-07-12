@@ -194,17 +194,15 @@ html, body {
 }
 
 #you-win-text-sec-page3 button {
-  margin-top: 15%;
-  transform: translateX(-20%);
+  margin-top: 1.5em;  
   color: grey;
   font-weight: bold;
   text-wrap: nowrap;
-  padding: 10% 40%;
+  padding: 0.8em 2.5em;
   background-color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  place-self: center;
 }
 
 #player-choice-sec-page3 {
