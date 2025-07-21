@@ -1,0 +1,356 @@
+body {
+  background-color: #8cc461;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.parent {
+  height: 100%;
+}
+
+#score-container {
+  display: flex;
+  border: 2px solid white;
+  width: 55%;
+  margin-top: 3%;
+  margin-left: 15%;
+  height: 20%;
+  border-radius: 15px;
+  place-items: center;
+  padding: 0 1%;
+  justify-content: space-around;
+}
+
+#RPS-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 55%;
+  height: 80%;  
+  font-weight: bold;
+  color: white;
+}
+
+#RPS-text div {
+  font-size: xx-large;
+}
+
+#score-section {
+  position: relative;
+  display: flex;
+  width: 35%;
+  height: 80%;
+  justify-content: space-between;
+}
+
+#computer-score-sec {
+  height: 100%;
+  width: 45%;
+}
+
+#computer-score-sec img {
+  width: 100%;
+  height: 100%;
+}
+
+#computer-score {
+  position: absolute;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-weight: bold;  
+  justify-content: center;
+}
+
+#computer-label {
+  color: rgb(101, 101, 101);
+  margin-top: 5%;
+}
+
+#CS-label {
+  color: rgb(101, 101, 101);
+  margin-bottom: 5%;
+}
+
+#CS-text {
+  font-size: 4em;
+}
+
+#your-score-sec {
+  height: 100%;
+  width: 45%;
+}
+
+#your-score-sec img {
+  width: 100%;
+  height: 100%;
+}
+
+#your-score {
+  position: absolute;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-weight: bold;  
+  justify-content: center;
+}
+
+#your-label {
+  color: rgb(101, 101, 101);
+  margin-top: 5%;
+}
+
+#YS-label {
+  color: rgb(101, 101, 101);
+  margin-bottom: 5%;
+}
+
+#YS-text {
+  font-size: 4em;
+}
+
+#game-container {
+  position: relative;
+  width: 30%;
+  margin-left: 25%;
+  margin-top: 5%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-upper-sec {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#rock-circle {
+  transform: translate(10%);
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  width: 45%;
+  height: 95%;
+  place-content: center;
+  justify-content: center;
+}
+
+#rock-circle img {
+  width: 100%;
+  height: 100%;
+}
+
+#scissors-circle {
+  transform: translate(-10%);
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  width: 45%;
+  height: 95%;
+  place-content: center;
+  justify-content: center;
+}
+
+#scissors-circle img {
+  width: 100%;
+  height: 100%;
+}
+
+#line1-parent {
+  width: 40%;
+  height: 10%;
+}
+
+#line1 {
+  width: 100%;
+  height: 100%;
+}
+
+#game-middle-sec {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+#line3-parent {
+  width: 40%;
+  transform: rotate(55deg);
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  z-index: 1;
+  height: 5%;
+}
+
+#line3 {
+  width: 100%;
+  height: 100%;
+}
+
+#line2-parent {
+  width: 40%;
+  transform: rotate(125deg);
+  position: absolute;
+  top: 50%;
+  right: 12%;
+  z-index: 1;
+  height: 5%;
+}
+
+#line2 {
+  width: 100%;
+  height: 100%;
+}
+
+#game-lower-sec {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: center;  
+}
+
+#paper-circle {
+  width: 45%;
+  height: 95%;      
+  display: inline-block;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#paper-circle img {
+  width: 80%;   
+  transform: translateX(10%); 
+  z-index: 5;
+}
+
+#game-container img:hover:not(#line1):not(#line2):not(#line3),
+#game-container
+  span:hover:not(#line1-parent):not(#line2-parent):not(#line3-parent) {
+  filter: brightness(1.2) drop-shadow(0 0 10px white);
+  transition: filter 0.3s ease;
+}
+
+#rules-parent {
+  background-color: white;
+  position: fixed;
+  top: 30%;
+  left: 60%;
+  width: 25%;
+  height: 55%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1%;
+  z-index: 1000;
+}
+
+.show-rules {
+  display: flex !important;
+}
+
+#rules-board {
+  background-color: #004429;
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#writting-area h1 {
+  place-self: center;
+  color: white;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+#writting-area {
+  width: 90%;
+  height: 100%;5
+}
+
+.custom-square-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5%;
+}
+
+.custom-square-list li {
+  color: white;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 5% 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.custom-square-list li::before {
+  content: "";
+  display: inline-block;
+  width: 5%;
+  height: 1em;
+  background-color: #ffd600;
+  margin-right: 4%;
+  flex-shrink: 0;
+}
+
+#rules-parent button {
+  position: absolute;
+  top: -8%;
+  right: -7%;
+  width: 15%;
+  height: 15%;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  border: 7px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+#rules-parent button:hover {
+  background-color: #cc0000;
+}
+
+#rules-text {
+  position: absolute;
+  right: 13%;
+  font-size: 1.3em;
+  padding: 0.2em 1em;
+  color: white;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 0.4em;
+  cursor: pointer;
+}
+
+#rules-text:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}

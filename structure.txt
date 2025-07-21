@@ -1,0 +1,96 @@
+Folder PATH listing for volume Windows
+Volume serial number is 1828-BBD0
+C:.
+│   README.md
+│   structure.txt
+│   
+└───Recreated JS Project
+    │   app.css
+    │   app.html
+    │   app.js
+    │   
+    ├───Images
+    │   ├───Hurray
+    │   │       Group 5.png
+    │   │       HURRAY!!.png
+    │   │       Vector.png
+    │   │       YOU WON THE GAME.png
+    │   │       
+    │   ├───page2
+    │   │       15.png
+    │   │       8.png
+    │   │       AGAINST PC.png
+    │   │       COMPUTER.png
+    │   │       Ellipse 3.png
+    │   │       Ellipse 4.png
+    │   │       Ellipse 5.png
+    │   │       NEXT.png
+    │   │       PAPER-LABEL.png
+    │   │       Paper.png
+    │   │       PC PICKED.png
+    │   │       PLAY AGAIN.png
+    │   │       Rectangle 1.png
+    │   │       Rectangle 2.png
+    │   │       Rectangle 3.png
+    │   │       Rectangle 4.png
+    │   │       Rectangle 5.png
+    │   │       Rectangle 6.png
+    │   │       ROCK-LABEL.png
+    │   │       Rock.png
+    │   │       RULES.png
+    │   │       SCISSORS-LABEL.png
+    │   │       Scissors.png
+    │   │       SCORE-1.png
+    │   │       SCORE-LABEL.png
+    │   │       TIE UP.png
+    │   │       YOU LOST.png
+    │   │       YOU PICKED.png
+    │   │       YOU WIN.png
+    │   │       YOUR.png
+    │   │       
+    │   └───PNG
+    │           0-1.png
+    │           0.png
+    │           COMPUTER.png
+    │           Ellipse 3.png
+    │           Ellipse 4.png
+    │           Ellipse 5.png
+    │           Fist.png
+    │           Group 4.png
+    │           Hand.png
+    │           Line 1.png
+    │           Line 2.png
+    │           Line 3.png
+    │           Paper.png
+    │           Rectangle 1.png
+    │           Rectangle 2.png
+    │           Rectangle 3.png
+    │           Rectangle 4.png
+    │           Rock.png
+    │           RULES.png
+    │           Scissors.png
+    │           SCORE-1.png
+    │           SCORE.png
+    │           Victory.png
+    │           YOUR.png
+    │           
+    └───Pages
+        ├───Hurray
+        │       hurray.css
+        │       hurray.html
+        │       
+        ├───Page2
+        │       page2.css
+        │       page2.html
+        │       win.js
+        │       
+        ├───Page3
+        │       lose.js
+        │       page3.css
+        │       page3.html
+        │       
+        └───Page4
+                page4.css
+                page4.html
+                tie.js
+                

@@ -13,7 +13,7 @@ closeButton.addEventListener("click", () => {
 const playAgainBtn = document.querySelector("#you-win-text-sec button");
 if (playAgainBtn) {
   playAgainBtn.addEventListener("click", () => {
-    window.location.href = "../../app.html";
+    window.location.href = "../../index.html";
   });
 }
 

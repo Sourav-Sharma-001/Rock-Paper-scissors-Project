@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const playAgainBtn = document.getElementById("play-again-page3");
   playAgainBtn.addEventListener("click", () => {
-    window.location.href = "../../app.html";
+    window.location.href = "../../index.html";
   });
 
   const playerMove = localStorage.getItem("playerMove");
