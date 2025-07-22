@@ -42,6 +42,6 @@ if (computerScoreEl) computerScoreEl.textContent = computerScore || 0;
 const nextButton = document.getElementById("next-text");
 if (nextButton) {
   nextButton.addEventListener("click", () => {
-    window.location.href = "../../Pages/Hurray/hurray.html";
+    window.location.href = "../Hurray/hurray.html";
   });
 }
