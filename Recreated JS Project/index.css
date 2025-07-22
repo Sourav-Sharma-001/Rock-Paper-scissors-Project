@@ -251,7 +251,7 @@ html, body {
   background-color: white;
   position: fixed;
   top: 30%;
-  left: 60%;
+  left: 70%;
   width: 25%;
   height: 55%;
   display: none;
@@ -338,7 +338,7 @@ html, body {
 
 #rules-text {
   position: absolute;
-  right: 13%;
+  right: 5%;
   font-size: 1.3em;
   padding: 0.2em 1em;
   color: white;
