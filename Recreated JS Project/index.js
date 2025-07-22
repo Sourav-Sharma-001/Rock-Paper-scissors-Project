@@ -55,11 +55,11 @@ function playGame(playerMove) {
   computerScoreEl.textContent = computerScore;
 
   if (result === "You win") {
-    window.location.href = "pages/Page2/page2.html";
+    window.location.href = "Pages/Page2/page2.html";
   } else if (result === "You lost") {
-    window.location.href = "pages/Page3/page3.html";
+    window.location.href = "Pages/Page3/page3.html";
   } else {
-    window.location.href = "pages/Page4/page4.html";
+    window.location.href = "Pages/Page4/page4.html";
   }
 }
 
